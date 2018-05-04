@@ -1,2 +1,4 @@
+baseurl: ""
+url: "https://harinidevi.github.io/"
 markdown: kramdown
 theme: jekyll-theme-cayman
