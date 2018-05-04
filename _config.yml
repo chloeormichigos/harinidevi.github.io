@@ -1,1 +1,5 @@
-theme:jekyll-theme-midnight
+baseurl: ""
+url: "https://harinidevi.github.io/"
+markdown: kramdown
+theme: jekyll-theme-cayman
+encoding: UTF-8
