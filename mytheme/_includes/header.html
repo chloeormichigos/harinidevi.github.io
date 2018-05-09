@@ -1,0 +1,160 @@
+<div id="banner" role="banner">
+	<div class="container" id="heading">
+		<h1 class="hidden-phone site-title">
+			<a class="logo custom-logo" href="/../"
+				title="Go to sambaash Documents"> <img
+				alt="sambaash documents" height="25"
+				src="/image/layout_set_logo?img_id=13084&amp;t=1524261278700"
+				width="201">
+			</a>
+		</h1>
+		<!-- breadcrumb section -->
+		<!--<div class="visible-phone">
+			<ul aria-label="Breadcrumb" class="breadcrumb breadcrumb-horizontal">
+				<li class="first breadcrumb-truncate"><a
+					href="https://dev.liferay.com/develop">Documentation</a><span
+					class="divider">/</span></li>
+				<li class="current-parent"><a
+					href="https://dev.liferay.com/discover">User &amp; Admin</a><span
+					class="divider">/</span></li>
+				<li class="active last breadcrumb-truncate"><a
+					href="https://dev.liferay.com/discover/portal">User Guide</a><span
+					class="divider">/</span></li>
+			</ul>
+		</div>-->
+	</div>
+	<div class="prenavbar">
+		<nav class="sort-pages modify-pages navbar site-navigation container"
+			id="navigation" role="navigation" style="height: 253px;">
+			<div class="navbar-inner">
+				<div class="collapse nav-collapse">
+					<!-- Search bar hidden. included in sidebar navigation -->
+					<!-- <div class="search-nav">
+						<div
+							class="portlet-boundary portlet-boundary_3_ portlet-static portlet-static-end portlet-borderless portlet-search "
+							id="p_p_id_3_">
+							<span id="p_3"></span>
+							<div class="portlet-borderless-container">
+								<div class="portlet-body">
+									<div class="yui3-skin-sam"
+										id="ctem_null_null_3_incrementalSearchContainer">
+										<form
+											action="https://dev.liferay.com/search?p_p_id=3&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_mode=view&amp;_3_struts_action=%2Fsearch%2Fsearch&amp;_3_redirect=%2Fdiscover%2Fportal"
+											method="get" name="ctem_null_null_3_fm"
+											onsubmit="ctem_null_null_3_search(); return false;">
+											<input name="p_p_id" type="hidden" value="3"><input
+												name="p_p_lifecycle" type="hidden" value="0"><input
+												name="p_p_state" type="hidden" value="maximized"><input
+												name="p_p_mode" type="hidden" value="view"><input
+												name="_3_struts_action" type="hidden" value="/search/search"><input
+												name="_3_redirect" type="hidden" value="/discover/portal">
+											<input name="_3_keywords" placeholder="Search" size="30"
+												title="Search" type="text" value=""
+												class="yui3-aclist-input" aria-autocomplete="list"
+												aria-expanded="false"
+												aria-owns="yui_patched_v3_11_0_1_1525785506035_244"
+												autocomplete="off"> <input name="_3_groupId"
+												type="hidden" value="10184"> <input
+												align="absmiddle" border="0"
+												src="https://dev.liferay.com/osb-ldn-theme/images/common/search.png"
+												title="Search" type="image">
+											<div id="yui_patched_v3_11_0_1_1525785506035_224"
+												class="yui3-widget yui3-aclist yui3-widget-positioned yui3-aclist-hidden"
+												aria-hidden="true"
+												style="width: 218px; left: 0px; top: 29px;">
+												<div id="yui_patched_v3_11_0_1_1525785506035_226"
+													class="yui3-aclist-content">
+													<ul class="yui3-aclist-list"
+														id="yui_patched_v3_11_0_1_1525785506035_244"
+														role="listbox"></ul>
+												</div>
+											</div>
+											<div class="yui3-aclist-aria" aria-live="polite"
+												role="status"></div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<ul aria-label="Site Pages" class="nav nav-collapse" role="menubar">
+						{% assign sorted_collections = site.collections | sort: "position" %}
+							{% for collection in sorted_collections %}
+								{% if collection.label != "posts" %}
+									<li class="lfr-nav-item selected active dropdown" id="layout_2" aria-selected="true" role="presentation">
+										{% assign sorted_docs = collection.docs | sort: "position" %}
+										{% assign docPosition = "" %}
+											{% for doc in sorted_docs %}
+											{% if doc.position == 1 %}
+											
+											
+										<a aria-labelledby="layout_2" aria-haspopup="true" class="dropdown-toggle" href="{% if page.url != '/' %}/{% endif %}#{{ doc.id | replace: '/', '' | replace: '.', '' }}"
+											role="menuitem" tabindex="0"
+											id="yui_patched_v3_11_0_1_1525785506035_370"> 
+											<span>
+												{{ collection.title }}</span>
+										</a>
+										{% endif %}
+										<!-- <ul>
+											{% assign sorted_docs = collection.docs | sort: "position" %}
+											{% for doc in sorted_docs %}
+												<li>
+													<a href="{% if page.url != '/' %}/{% endif %}#{{ doc.id | replace: '/', '' | replace: '.', '' }}">
+														{{ doc.title }}
+														{% if doc.type %}<span class="endpoint {{ doc.type }}"></span>{% endif %}
+													</a>
+												</li>
+											{% endfor %}
+										</ul> -->
+										{% endfor %}
+									</li>
+								{% endif %}
+							{% endfor %}
+						
+							<!-- <ul class="dropdown-menu child-menu" role="menu">
+								<li class="lfr-nav-item" id="layout_3" role="presentation">
+									<a aria-labelledby="layout_3"
+									href="https://dev.liferay.com/discover" role="menuitem"
+									tabindex="-1" id="yui_patched_v3_11_0_1_1525785506035_372">
+										User &amp; Admin </a>
+								</li>
+								<li class="lfr-nav-item" id="layout_36" role="presentation">
+									<a aria-labelledby="layout_36"
+									href="https://dev.liferay.com/discover/deployment"
+									role="menuitem" tabindex="-1"
+									id="yui_patched_v3_11_0_1_1525785506035_374"> Deployment </a>
+								</li>
+								<li class="lfr-nav-item" id="layout_83" role="presentation">
+									<a aria-labelledby="layout_83"
+									href="https://dev.liferay.com/developer" role="menuitem"
+									tabindex="-1" id="yui_patched_v3_11_0_1_1525785506035_376">
+										Developer </a>
+								</li>
+								<li class="lfr-nav-item" id="layout_10" role="presentation">
+									<a aria-labelledby="layout_10"
+									href="https://dev.liferay.com/develop/reference"
+									role="menuitem" tabindex="-1"
+									id="yui_patched_v3_11_0_1_1525785506035_378"> Reference </a>
+								</li>
+								<li class="lfr-nav-item" id="layout_27" role="presentation">
+									<a aria-labelledby="layout_27"
+									href="https://dev.liferay.com/discover/social-office"
+									role="menuitem" tabindex="-1"
+									id="yui_patched_v3_11_0_1_1525785506035_380"> Social Office
+								</a>
+								</li>
+								<li class="lfr-nav-item" id="layout_44" role="presentation">
+									<a aria-labelledby="layout_44"
+									href="https://dev.liferay.com/discover/reference"
+									role="menuitem" tabindex="-1"
+									id="yui_patched_v3_11_0_1_1525785506035_382"> Admin
+										Reference </a>
+								</li>
+							</ul> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<script>Liferay.Data.NAV_LIST_SELECTOR=".navbar-inner .nav-collapse > ul";</script>
+</div>
