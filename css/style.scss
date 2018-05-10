@@ -13,11 +13,11 @@ $space: 20px;
 
 $mobile-break: 700px;
 
-{% if site.baseurl %}
+/* {% if site.baseurl %}
 	$base-url: {{ site.baseurl }};
 {% else %}
 	$base-url: '';
-{% endif %}
+{% endif %} */
 
 #banner {
     background: url(../images/back_decoration_nav.png) #0058ba no-repeat right top;
