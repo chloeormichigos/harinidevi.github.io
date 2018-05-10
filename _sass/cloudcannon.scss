@@ -1,26 +1,29 @@
 .editor-link {
- 	display: none;
  	float: right;
 	margin-top: 0;
 	border: 0;
 	border-radius: 2px;
 	box-sizing: border-box;
-	font-size: 2rem;
 	text-decoration: none;
-	padding: 10px 15px;
+	padding: 5px 10px;
 	margin: 0;
-	font-size: 18px;
+	font-size: 12px;
 	cursor: pointer;
-	background-color: #f7e064;
-	color: #333;
+	background-color: #488f06;
+	color: #fff;
 	box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+	    letter-spacing: 0.1px;
 
 	&:hover {
-		background-color: #f4d525;
-		color: #333;
+		background-color: #488f06;
+		color: #fff;
 	}
 }
 
 .cms-editor-active .editor-link {
 	display: inline-block;
+}
+
+.label-success {
+    background-color: #488f06;
 }

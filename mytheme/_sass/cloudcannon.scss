@@ -1,5 +1,4 @@
 .editor-link {
- 	display: none;
  	float: right;
 	margin-top: 0;
 	border: 0;
@@ -23,4 +22,8 @@
 
 .cms-editor-active .editor-link {
 	display: inline-block;
+}
+
+.label-success {
+    background-color: #488f06;
 }
