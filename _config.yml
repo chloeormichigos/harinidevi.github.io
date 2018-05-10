@@ -8,6 +8,7 @@ google_analytics_key:
 permalink: pretty
 theme: mytheme
 baseurl: ""
+github: https://github.com/HariniDevi/harinidevi.github.io/blob/master/
 # -----
 # Build
 
