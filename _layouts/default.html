@@ -34,15 +34,14 @@
 			</form>
 
 			{% include sidebar.html %}
-
-			<!-- <p class="copyright">
-				<a href="https://cloudcannon.com/">
-					Template by CloudCannon
-				</a>
-			</p> -->
+			{% include header.html %}
+			
 		</header>
+		
 		<div class="main">
+			<div class="content-div">
 			{{ content }}
+		</div>
 		</div>
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {

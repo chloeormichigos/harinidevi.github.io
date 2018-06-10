@@ -3,8 +3,6 @@ title: API Docs
 layout: default
 ---
 
-{% include header.html %}
-
 {% assign sorted_collections = site.collections | sort: "position" %}
 {% for collection in sorted_collections %}
 	{% assign sorted_docs = collection.docs | sort: "position" %}
@@ -46,3 +44,22 @@ layout: default
 		</section>
 	{% endfor %}
 {% endfor %}
+
+<h3 style="margin-top:150px">
+<h3 style="margin-top:150px"> 
+
+	{% assign sorted_collections = site.pages %}
+{% for page in sorted_collections %}
+
+{% if page.title == "Applications" %}
+	
+		{{ page.content_markdown }}
+
+		{% endif %}
+	
+
+{% endfor %}
+
+	 <h3>
+	<h3>
+

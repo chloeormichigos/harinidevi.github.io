@@ -16,13 +16,13 @@ timezone: Etc/UTC
 
 collections:
   documentation:
-    title: Documentation
+    title: Configurations
     position: 1
   applications:
     title: Applications
     position: 2  
   api:
-    title: APIs
+    title: Templates
     position: 3
 plugins:
   - jekyll-sitemap
@@ -42,12 +42,13 @@ defaults:
     scope:
       type: "documentation"
     values:
-      _hide_content: true
+      layout: default
   -
     scope:
+      path: "/applications"
       type: "applications"
     values:
-      _hide_content: true    
+      layout: index
   -
     scope:
       type: "api"

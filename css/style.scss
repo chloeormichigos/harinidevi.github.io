@@ -20,7 +20,78 @@ $mobile-break: 700px;
 {% endif %} */
 
 #banner {
-    background: url(../images/back_decoration_nav.png) #0058ba no-repeat right top;
+    /*background: url(../images/back_decoration_nav.png) #0058ba no-repeat right top;*/
+    background:#1F2738;
+    position:fixed;
+    top:0;
+    margin-left:210px;
+}
+
+.content-div{
+    margin: 0 40px;
+    padding-top: 13%;
+}
+
+.Applications ul, .Configurations ul, .Templates ul{
+    display:none;
+    position: absolute;
+    background: #e5e6e8;
+    color:#333;
+    width: 100%;
+    float: left;
+    left: 0;
+        border-top: 1px solid #e5e6e8;
+}
+
+.Applications:hover ul, .Configurations:hover ul, .Templates:hover ul{
+    display:block;
+}
+
+.Applications ul:before,.Configurations ul:before,.Templates ul:before {
+    content: '';
+    display: inline-block;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #e5e6e8;
+    border-bottom-color: #e5e6e8;
+    position: absolute;
+    top: -10px;
+}
+
+.Applications ul:before{
+    left: 8%;
+}
+
+.Configurations ul:before{
+    left: 20%;
+}
+
+.Templates ul:before{
+    left:32%;
+}
+
+.Applications ul:after,.Configurations ul:after,.Templates ul:after {
+    content: '';
+    display: inline-block;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #e5e6e8;
+    position: absolute;
+    top: -9px;
+}
+
+.Applications ul:after{
+    left: 8%;
+}
+.Configurations ul:after{
+    left: 20%;
+}
+.Templates ul:after {
+    left:32%;
+}
+
+#navigation .nav > li > ul > li > a{
+    padding: 4px 15px 5px;
 }
 
 #heading {
@@ -45,7 +116,8 @@ $mobile-break: 700px;
 }
 
 .site-title {
-    line-height: 33px;
+    padding: 10px 55px 0;
+        letter-spacing: 1.5px;
 }
 
 #banner a {
@@ -148,6 +220,7 @@ img {
     display: block;
     float: left;
     margin: 0 10px 0 0;
+    width:100%;
 }
  .nav {
     margin-left: 0;
@@ -181,6 +254,7 @@ img {
   #navigation .navbar-inner li a {
     text-shadow: none;
 }
+
   #navigation .nav li a {
     background-color: transparent;
     font-size: 115%;
@@ -188,6 +262,11 @@ img {
   #navigation .navbar-inner li a {
     color: #FFF;
 }
+
+#navigation .navbar-inner li ul li a{
+    color:#333;
+}
+
   #navigation .nav > li > a {
     padding: 4px 15px 5px;
 }
@@ -240,7 +319,6 @@ img {
   #navigation .nav .dropdown-menu {
     background: #00ACFF;
     border-width: 0;
-    display: block;
     margin: 0;
 }
   .dropdown-menu {

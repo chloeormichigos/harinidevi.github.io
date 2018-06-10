@@ -1,11 +1,20 @@
 jQuery(function() {
 	var $sidebar = $('#sidebar'),
 		$nav = $('.nav'),
+		$mainNav = $('.nav li a'),
 		$main = $('.main');
-
+alert("mainNav" + $mainNav);
 	var found = true;
 
 	var $el;
+
+	$mainNav.on('click', function(e){
+		e.preventDefault;
+		alert("sdsdsss " + $(this).prev());
+		// var txt = $(this).text() == "Applications"?"CLOSE":"Applications";
+  //       $(this).text(txt);
+        $(this).next('ul').toggle();
+	});
 
 	$sidebar.find('a').click(function() {
 		$('body').removeClass('nav-open');
@@ -103,3 +112,12 @@ function getClosestHeader() {
 	}
 	return $last;
 }
+
+// $('.nav ul li a span')
+// .css({cursor: "pointer"})
+// .on('click', function(){
+// 	alert("ssss");
+//   var txt =  $(this).text() == "Applications"?"CLOSE":"MENU";
+//   $(this).text(txt);
+//   $(this).next('ul').toggle();
+// })
