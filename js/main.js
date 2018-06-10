@@ -3,14 +3,14 @@ jQuery(function() {
 		$nav = $('.nav'),
 		$mainNav = $('.nav li a'),
 		$main = $('.main');
-alert("mainNav" + $mainNav);
+
 	var found = true;
 
 	var $el;
 
 	$mainNav.on('click', function(e){
 		e.preventDefault;
-		alert("sdsdsss " + $(this).prev());
+		//alert("sdsdsss " + $(this).prev());
 		// var txt = $(this).text() == "Applications"?"CLOSE":"Applications";
   //       $(this).text(txt);
         $(this).next('ul').toggle();
@@ -113,11 +113,15 @@ function getClosestHeader() {
 	return $last;
 }
 
-// $('.nav ul li a span')
-// .css({cursor: "pointer"})
-// .on('click', function(){
-// 	alert("ssss");
-//   var txt =  $(this).text() == "Applications"?"CLOSE":"MENU";
-//   $(this).text(txt);
-//   $(this).next('ul').toggle();
-// })
+$(window).load(function () {
+  var url = window.location.href;
+var pos1 = url.indexOf("/");
+var res = url.substring(pos1+2, url.length);
+var pos2 = res.indexOf("/");
+var res1 = res.substring(pos2+1, res.length);
+var pos3 = res1.indexOf("/");
+var res2 = res1.substring(0, pos3);
+var elem = "section"+"_"+res2;
+var contents = $('#'+elem); 
+contents.attr('style','display: block');
+});

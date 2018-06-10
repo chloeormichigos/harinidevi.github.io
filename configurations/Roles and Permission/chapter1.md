@@ -2,13 +2,14 @@
 title: Chapter1
 position: 1
 display: subsubmenu
-parent: Applications
-subparent: Product
+parent: Configurations
+subparent: Roles and Permission
 parameters:
   - name:
     content:
+
 content_markdown: |-
 
- Product documentation chapter 1
+ Campaign documentation chapter 1
   
 ---
