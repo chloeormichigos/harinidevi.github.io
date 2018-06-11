@@ -48,17 +48,16 @@ layout: default
 <h3 style="margin-top:30px"> 
 
 Knowledge hub introduction
-	{% assign sorted_collections = site.pages %}
+
+	<!-- {% assign sorted_collections = site.pages %}
 {% for page in sorted_collections %}
 
-{% if page.title == "Applications" %}
-	
-		{{ page.content_markdown }}
+{% if page.parent == "introduction" %}
+{{ page.title 	}}
+{{ page.content_markdown }}
+	{% endif %}
 
-		{% endif %}
-	
-
-{% endfor %}
+{% endfor %} -->
 
 	<h3>
 

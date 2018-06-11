@@ -9,7 +9,7 @@ parameters:
     content:
 
 content_markdown: |-
-
- Campaign documentation chapter 1
   
 ---
+
+ Campaign documentation chapter 1

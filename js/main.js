@@ -122,6 +122,12 @@ var res1 = res.substring(pos2+1, res.length);
 var pos3 = res1.indexOf("/");
 var res2 = res1.substring(0, pos3);
 var elem = "section"+"_"+res2;
-var contents = $('#'+elem.toLowerCase()); 
-contents.attr('style','display: block');
+if(res2 != ""){
+	var contents = $('#'+elem.toLowerCase()); 
+	contents.attr('style','display: block');
+}else{
+	var contents = $('.intro-section'); 
+	contents.attr('style','display: block');
+}
+
 });

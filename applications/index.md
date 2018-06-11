@@ -8,7 +8,5 @@ parameters:
     
 content_markdown: |-
 
-   This is applications file
-
 ---
-{% include_relative product/index.md %}
+ This is applications file
