@@ -27,7 +27,7 @@
 								{% if page.display == "menu" %}
 									<li class="lfr-nav-item dropdown {{ page.title }}" id="layout_2" aria-selected="true" role="presentation">
 										
-											<a aria-labelledby="layout_2" aria-haspopup="true" class="dropdown-toggle" href="/{{ page.title }}"
+											<a aria-labelledby="layout_2" aria-haspopup="true" class="dropdown-toggle" href="/{{ page.menutitle }}"
 											role="menuitem" tabindex="0"
 											id="yui_patched_v3_11_0_1_1525785506035_370"> 
 											<span>
@@ -40,7 +40,7 @@
 															{% if subpage.parent == page.title %}
 																<li class="lfr-nav-item {{ subpage.parent }} {{ page.title }}" id="layout_3" role="presentation">
 																	<a aria-labelledby="layout_3"
-																	href="/{{ subpage.parent }}/{{ subpage.title }}" role="menuitem"
+																	href="/{{ subpage.parent }}/{{ subpage.menutitle }}" role="menuitem"
 																	tabindex="-1" id="yui_patched_v3_11_0_1_1525785506035_372">
 																		<span>{{ subpage.title }}</span></a>
 																</li>

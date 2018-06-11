@@ -1,5 +1,6 @@
 ---
 title: minisite
+menutitle: minisite
 position: 1
 display: submenu
 parent: templates

@@ -1,5 +1,6 @@
 ---
 title: chapter2
+menutitle: chapter2
 position: 2
 display: subsubmenu
 parent: applications

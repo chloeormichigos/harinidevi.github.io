@@ -1,5 +1,6 @@
 ---
 title: product
+menutitle: product
 position: 1
 display: submenu
 parent: applications

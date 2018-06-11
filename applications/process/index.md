@@ -1,5 +1,6 @@
 ---
 title: process
+menutitle: process
 position: 2
 display: submenu
 parent: applications

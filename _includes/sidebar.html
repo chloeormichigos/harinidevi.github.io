@@ -4,7 +4,7 @@
 		{% if page.label != "posts" %}
 			{% if page.display == "menu" %}
 				<section id="section_{{ page.title }}" class="section">
-					<a href="/{{ page.title }}">
+					<a href="/{{ page.menutitle }}">
 						<h6>{{ page.title }}</h6>
 					</a>	
 					<ul>
@@ -13,7 +13,7 @@
 								{% if subpage.display == "submenu" %}
 									{% if subpage.parent == page.title %}
 										<li class="{{ subpage.parent }} {{ page.title }}">
-											<a href="/{{ subpage.parent }}/{{ subpage.title }}">
+											<a href="/{{ subpage.parent }}/{{ subpage.menutitle }}">
 												{{ subpage.title }}
 												{% if subpage.type %}<span class="endpoint {{ doc.type }}"></span>{% endif %}
 											</a>
@@ -23,7 +23,7 @@
 														{% if subsubpage.display == "subsubmenu" %}
 															{% if subsubpage.subparent == subpage.title %}
 															<li class="{{ subsubpage.parent }} {{ subsubpage.subparent }} {{ subsubpage.title }}">
-																<a href="/{{ subsubpage.parent }}/{{ subsubpage.subparent }}/{{ subsubpage.title }}">
+																<a href="/{{ subsubpage.parent }}/{{ subsubpage.subparent }}/{{ subsubpage.menutitle }}">
 																	{{ subsubpage.title }}
 																	{% if subsubpage.type %}<span class="endpoint {{ doc.type }}"></span>{% endif %}
 																</a>
@@ -42,7 +42,7 @@
 			{% endif %}
 			{% if page.display == "sidemenu" %}
 				<section id="section_{{ page.title }}" class="intro-section section">
-					<a href="/{{ page.title }}">
+					<a href="/{{ page.menutitle }}">
 						<h6>{{ page.title }}</h6>
 					</a>	
 					<ul>
@@ -51,7 +51,7 @@
 								{% if subpage.display == "submenu" %}
 									{% if subpage.parent == page.title %}
 										<li class="{{ subpage.parent }} {{ page.title }}">
-											<a href="/{{ subpage.parent }}/{{ subpage.title }}">
+											<a href="/{{ subpage.parent }}/{{ subpage.menutitle }}">
 												{{ subpage.title }}
 												{% if subpage.type %}<span class="endpoint {{ doc.type }}"></span>{% endif %}
 											</a>
@@ -61,7 +61,7 @@
 														{% if subsubpage.display == "subsubmenu" %}
 															{% if subsubpage.subparent == subpage.title %}
 															<li class="{{ subsubpage.parent }} {{ subsubpage.subparent }} {{ subsubpage.title }}">
-																<a href="/{{ subsubpage.parent }}/{{ subsubpage.subparent }}/{{ subsubpage.title }}">
+																<a href="/{{ subsubpage.parent }}/{{ subsubpage.subparent }}/{{ subsubpage.menutitle }}">
 																	{{ subsubpage.title }}
 																	{% if subsubpage.type %}<span class="endpoint {{ doc.type }}"></span>{% endif %}
 																</a>

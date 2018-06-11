@@ -1,5 +1,6 @@
 ---
 title: roles and permission
+menutitle: roles-and-permission
 position: 1
 display: submenu
 parent: configurations

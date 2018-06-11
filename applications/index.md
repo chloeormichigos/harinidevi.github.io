@@ -1,5 +1,6 @@
 ---
 title: applications
+menutitle: applications
 position: 1
 display: menu
 parameters:
