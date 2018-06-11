@@ -1,8 +1,8 @@
 ---
-title: Process
+title: process
 position: 2
 display: submenu
-parent: Applications
+parent: applications
 parameters:
   - name:
     content:

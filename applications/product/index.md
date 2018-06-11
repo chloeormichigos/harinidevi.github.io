@@ -1,8 +1,8 @@
 ---
-title: Product
+title: product
 position: 1
 display: submenu
-parent: Applications
+parent: applications
 parameters:
   - name:
     content:

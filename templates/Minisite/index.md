@@ -1,8 +1,8 @@
 ---
-title: Minisite
+title: minisite
 position: 3
 display: submenu
-parent: Templates
+parent: templates
 parameters:
   - name:
     content:

@@ -5,6 +5,7 @@ sitemap: false
 
 .section{
     display:none;
+    text-transform: capitalize;
 }
 
 $brand-colour: #1F2738;
@@ -36,7 +37,7 @@ $mobile-break: 700px;
     padding-top: 13%;
 }
 
-.dropdown.Applications ul, .dropdown.Configurations ul, .dropdown.Templates ul{
+.dropdown.applications ul, .dropdown.configurations ul, .dropdown.templates ul{
     display:none;
     position: absolute;
     background: #e5e6e8;
@@ -47,11 +48,11 @@ $mobile-break: 700px;
         border-top: 1px solid #e5e6e8;
 }
 
-.dropdown.Applications:hover ul, .dropdown.Configurations:hover ul, .dropdown.Templates:hover ul{
+.dropdown.applications:hover ul, .dropdown.configurations:hover ul, .dropdown.templates:hover ul{
     display:block;
 }
 
-.dropdown.Applications ul:before,.dropdown.Configurations ul:before,.dropdown.Templates ul:before {
+.dropdown.applications ul:before,.dropdown.configurations ul:before,.dropdown.templates ul:before {
     content: '';
     display: inline-block;
     border-left: 9px solid transparent;
@@ -62,19 +63,19 @@ $mobile-break: 700px;
     top: -10px;
 }
 
-.dropdown.Applications ul:before{
+.dropdown.applications ul:before{
     left: 8%;
 }
 
-.dropdown.Configurations ul:before{
+.dropdown.configurations ul:before{
     left: 20%;
 }
 
-.dropdown.Templates ul:before{
+.dropdown.templates ul:before{
     left:32%;
 }
 
-.dropdown.Applications ul:after,.dropdown.Configurations ul:after,.dropdown.Templates ul:after {
+.dropdown.applications ul:after,.dropdown.configurations ul:after,.dropdown.templates ul:after {
     content: '';
     display: inline-block;
     border-left: 8px solid transparent;
@@ -84,13 +85,13 @@ $mobile-break: 700px;
     top: -9px;
 }
 
-.dropdown.Applications ul:after{
+.dropdown.applications ul:after{
     left: 8%;
 }
-.dropdown.Configurations ul:after{
+.dropdown.configurations ul:after{
     left: 20%;
 }
-.dropdown.Templates ul:after {
+.dropdown.templates ul:after {
     left:32%;
 }
 
@@ -265,6 +266,7 @@ img {
 }
   #navigation .navbar-inner li a {
     color: #FFF;
+        text-transform: capitalize;
 }
 
 #navigation .navbar-inner li ul li a{

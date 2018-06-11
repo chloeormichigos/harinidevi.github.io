@@ -1,15 +1,15 @@
 ---
-title: Chapter2
+title: chapter2
 position: 2
 display: subsubmenu
-parent: Applications
-subparent: Roles and Permission
+parent: applications
+subparent: roles and permission
 parameters:
   - name:
     content:
 
 content_markdown: |-
 
- Roles and Permission documentation chapter 1
+ Roles and Permission documentation chapter 2
   
 ---

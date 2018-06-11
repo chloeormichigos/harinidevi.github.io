@@ -1,8 +1,8 @@
 ---
-title: Campaign
+title: campaign
 position: 3
 display: submenu
-parent: Applications
+parent: applications
 parameters:
   - name:
     content:

@@ -1,5 +1,5 @@
 ---
-title: Configurations
+title: configurations
 position: 2
 display: menu
 parent: configurations

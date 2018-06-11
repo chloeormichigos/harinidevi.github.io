@@ -1,8 +1,8 @@
 ---
-title: Roles and Permission
+title: roles and permission
 position: 1
 display: submenu
-parent: Configurations
+parent: configurations
 parameters:
   - name:
     content:

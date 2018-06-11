@@ -1,9 +1,9 @@
 ---
-title: Chapter1
+title: chapter1
 position: 1
 display: subsubmenu
-parent: Applications
-subparent: Campaign
+parent: applications
+subparent: campaign
 parameters:
   - name:
     content:

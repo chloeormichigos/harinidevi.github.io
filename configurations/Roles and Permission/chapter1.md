@@ -1,15 +1,15 @@
 ---
-title: Chapter1
+title: chapter1
 position: 1
 display: subsubmenu
-parent: Configurations
-subparent: Roles and Permission
+parent: configurations
+subparent: roles and permission
 parameters:
   - name:
     content:
 
 content_markdown: |-
 
- Campaign documentation chapter 1
+ Configurations roles and permission documentation chapter 1
   
 ---

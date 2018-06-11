@@ -1,9 +1,9 @@
 ---
-title: Chapter1
+title: chapter1
 position: 1
 display: subsubmenu
-parent: Applications
-subparent: Process
+parent: applications
+subparent: process
 parameters:
   - name:
     content:

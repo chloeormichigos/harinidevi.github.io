@@ -1,5 +1,6 @@
 .section {
-  display: none; }
+  display: none;
+  text-transform: capitalize; }
 
 /*
     $base-url: );
@@ -15,7 +16,7 @@
   margin: 0 40px;
   padding-top: 13%; }
 
-.dropdown.Applications ul, .dropdown.Configurations ul, .dropdown.Templates ul {
+.dropdown.applications ul, .dropdown.configurations ul, .dropdown.templates ul {
   display: none;
   position: absolute;
   background: #e5e6e8;
@@ -25,10 +26,10 @@
   left: 0;
   border-top: 1px solid #e5e6e8; }
 
-.dropdown.Applications:hover ul, .dropdown.Configurations:hover ul, .dropdown.Templates:hover ul {
+.dropdown.applications:hover ul, .dropdown.configurations:hover ul, .dropdown.templates:hover ul {
   display: block; }
 
-.dropdown.Applications ul:before, .dropdown.Configurations ul:before, .dropdown.Templates ul:before {
+.dropdown.applications ul:before, .dropdown.configurations ul:before, .dropdown.templates ul:before {
   content: '';
   display: inline-block;
   border-left: 9px solid transparent;
@@ -38,16 +39,16 @@
   position: absolute;
   top: -10px; }
 
-.dropdown.Applications ul:before {
+.dropdown.applications ul:before {
   left: 8%; }
 
-.dropdown.Configurations ul:before {
+.dropdown.configurations ul:before {
   left: 20%; }
 
-.dropdown.Templates ul:before {
+.dropdown.templates ul:before {
   left: 32%; }
 
-.dropdown.Applications ul:after, .dropdown.Configurations ul:after, .dropdown.Templates ul:after {
+.dropdown.applications ul:after, .dropdown.configurations ul:after, .dropdown.templates ul:after {
   content: '';
   display: inline-block;
   border-left: 8px solid transparent;
@@ -56,13 +57,13 @@
   position: absolute;
   top: -9px; }
 
-.dropdown.Applications ul:after {
+.dropdown.applications ul:after {
   left: 8%; }
 
-.dropdown.Configurations ul:after {
+.dropdown.configurations ul:after {
   left: 20%; }
 
-.dropdown.Templates ul:after {
+.dropdown.templates ul:after {
   left: 32%; }
 
 #navigation .nav > li > ul > li > a {
@@ -208,7 +209,8 @@ img {
   font-size: 115%; }
 
 #navigation .navbar-inner li a {
-  color: #FFF; }
+  color: #FFF;
+  text-transform: capitalize; }
 
 #navigation .navbar-inner li ul li a {
   color: #333; }
