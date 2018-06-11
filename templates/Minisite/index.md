@@ -1,12 +1,13 @@
 ---
 title: minisite
-position: 3
+position: 1
 display: submenu
 parent: templates
 parameters:
   - name:
     content:
-content_markdown:
-
+content_markdown: |-
+   
 ---
- This is minisite template details
+
+this is minisite documentation
