@@ -3,61 +3,22 @@ title: API Docs
 layout: default
 ---
 
-{% assign sorted_collections = site.collections | sort: "position" %}
-{% for collection in sorted_collections %}
-	{% assign sorted_docs = collection.docs | sort: "position" %}
-	{% for doc in sorted_docs %}
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
-						{{ doc.title }}
-						{% if doc.type %}
-							<span class="endpoint {{ doc.type }}"></span>
-						{% endif %}
-					</a>
-					<a class="editor-link" href="{{site.github}}{{ doc.relative_path }}">Edit on Github</a>
-				</h3>
-				{% if doc.description %}
-					<p class="description">{{ doc.description }}</p>
-				{% endif %}
-
-				{% if doc.parameters and doc.parameters[0].name %}
-						<h6>Parameters</h6>
-						<dl>
-								{% for parameter in doc.parameters %}
-										<dt>{{ parameter.name }}</dt>
-										<dd>{{ parameter.content }}</dd>
-								{% endfor %}
-						</dl>
-				{% endif %}
-
-				{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
-
-				{% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
-						{% for block in doc.left_code_blocks %}
-								{% include syntax-highlight.html block=block %}
-								{% endfor %}
-						{% endif %}
-			</section>
-			
-		</section>
-	{% endfor %}
-{% endfor %}
-
 <h3 style="margin-top:30px"> 
 
 Knowledge hub introduction
+
+<a class="editor-link" href="{{site.github}}index.html">Edit on Github</a>
 
 	<!-- {% assign sorted_collections = site.pages %}
 {% for page in sorted_collections %}
 
 {% if page.parent == "introduction" %}
+
 {{ page.title 	}}
 {{ page.content_markdown }}
 	{% endif %}
 
-{% endfor %} -->
+{% endfor %}  -->
 
 	<h3>
 

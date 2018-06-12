@@ -12,5 +12,6 @@ parameters:
 content_markdown: |-
   
 ---
+<a class="editor-link" id="github-editor-link" href="{{site.github}}configurations/roles-and-permission/chapter2.md">Edit on Github</a>
 
  Roles and Permission documentation chapter 2

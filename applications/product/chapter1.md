@@ -11,5 +11,6 @@ parameters:
 content_markdown: |-
 
 ---
+<a class="editor-link" id="github-editor-link" href="{{site.github}}applications/product/chapter1.md">Edit on Github</a>
 
  Product documentation chapter 1

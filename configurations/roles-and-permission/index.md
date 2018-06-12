@@ -10,6 +10,7 @@ parameters:
 content_markdown:
 
 ---
+<a class="editor-link" id="github-editor-link" href="{{site.github}}configurations/roles-and-permission/index.md">Edit on Github</a>
 
 This is documentation for roles and permissions
 

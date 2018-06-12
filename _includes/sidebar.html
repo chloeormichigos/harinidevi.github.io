@@ -21,7 +21,7 @@
 												{% for subsubpage in sorted_pages %}
 													{% if subsubpage.label != "posts" %}
 														{% if subsubpage.display == "subsubmenu" %}
-															{% if subsubpage.subparent == subpage.title %}
+															{% if subsubpage.subparent == subpage.menutitle %}
 															<li class="{{ subsubpage.parent }} {{ subsubpage.subparent }} {{ subsubpage.title }}">
 																<a href="/{{ subsubpage.parent }}/{{ subsubpage.subparent }}/{{ subsubpage.menutitle }}">
 																	{{ subsubpage.title }}

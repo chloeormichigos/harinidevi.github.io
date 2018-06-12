@@ -129,5 +129,4 @@ if(res2 != ""){
 	var contents = $('.intro-section'); 
 	contents.attr('style','display: block');
 }
-
 });
