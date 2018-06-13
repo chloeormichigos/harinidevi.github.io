@@ -10,11 +10,12 @@
   background: #1F2738;
   position: fixed;
   top: 0;
-  margin-left: 210px; }
+  margin-left: 210px;
+  width: 100%; }
 
 .content-div {
   margin: 0 40px;
-  padding-top: 15%; }
+  padding-top: 13%; }
 
 .dropdown.applications ul, .dropdown.configurations ul, .dropdown.templates ul {
   display: none;
@@ -75,7 +76,7 @@
 
 @media (min-width: 1200px) {
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width: 1170px; } }
+    width: 100%; } }
 .container {
   margin-right: auto;
   margin-left: auto; }
