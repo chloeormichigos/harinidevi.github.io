@@ -42,6 +42,10 @@ $mobile-break: 700px;
     padding-top: 130px;
 }
 
+.mobile-sidebar{
+    display:none;
+}
+
 .dropdown.applications ul, .dropdown.configurations ul, .dropdown.templates ul{
     display:none;
     position: absolute;
