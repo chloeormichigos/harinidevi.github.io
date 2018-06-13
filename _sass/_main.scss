@@ -20,15 +20,15 @@ img {
 }
 
 @media (max-width: $mobile-break) {
-	.sidebar, header > form {
+	.sidebar, header > form,.mobile-sidebar {
 		display: none;
 	}
 
-	.sidebar h6 {
+	.sidebar h6,.mobile-sidebar h6 {
 		font-size: 1.4em;
 	}
 
-	.sidebar a {
+	.sidebar a,.mobile-sidebar a {
 		padding: 10px 0;
 	}
 
@@ -46,11 +46,6 @@ body {
 
 	&.nav-open {
 		overflow: hidden;
-
-		.sidebar,
-		header > form {
-			display: block;
-		}
 
 		header {
 			bottom: 0;
@@ -158,7 +153,7 @@ dl dd:after {
 	height: 0;
 }
 
-.sidebar h6 {
+.sidebar h6,.mobile-sidebar h6{
 	line-height: 1em;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
@@ -166,12 +161,12 @@ dl dd:after {
 	font-weight: bold;
 }
 
-.sidebar {
+.sidebar,.mobile-sidebar {
 	padding: 20px 20px 0 20px;
 	white-space:nowrap;
 	overflow-y: auto;
 
-	section {
+	section,.mobile-section{
 			padding: 10px 0;
 	}
 
@@ -474,6 +469,7 @@ header {
 		width: 25px;
 		height: 25px;
  		margin: 0 0 0 18px;
+ 		background: url(../images/menu.svg) no-repeat center bottom;
 		/*background-image: url({{ site.url }}+ '/images/menu.svg');*/
 		background-color: transparent;
 		background-repeat: no-repeat;
@@ -566,4 +562,8 @@ header {
 	font-size: .6em;
 	margin: 30px 0 0 0;
 	display: none;
+}
+
+body.nav-open .mobile-sidebar, body.nav-open header>form {
+    display: block;
 }

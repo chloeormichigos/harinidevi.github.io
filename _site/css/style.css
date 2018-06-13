@@ -15,7 +15,7 @@
 
 .content-div {
   margin: 0 40px;
-  padding-top: 13%; }
+  padding-top: 130px; }
 
 .dropdown.applications ul, .dropdown.configurations ul, .dropdown.templates ul {
   display: none;
@@ -332,6 +332,16 @@ img {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0EBDF1', endColorstr='#FF0CAAD9', GradientType=0); }
 
+@media (max-width: 979px) {
+  #banner {
+    display: none; }
+
+  .content-div {
+    margin: 20px;
+    padding-top: 30px; }
+
+  .editor-link {
+    display: none; } }
 html, body {
   padding: 0;
   margin: 0; }
@@ -350,13 +360,13 @@ img {
   max-width: 100%; }
 
 @media (max-width: 700px) {
-  .sidebar, header > form {
+  .sidebar, header > form, .mobile-sidebar {
     display: none; }
 
-  .sidebar h6 {
+  .sidebar h6, .mobile-sidebar h6 {
     font-size: 1.4em; }
 
-  .sidebar a {
+  .sidebar a, .mobile-sidebar a {
     padding: 10px 0; }
 
   body .main {
@@ -369,9 +379,6 @@ body {
   background: #fbfbfb; }
   body.nav-open {
     overflow: hidden; }
-    body.nav-open .sidebar,
-    body.nav-open header > form {
-      display: block; }
     body.nav-open header {
       bottom: 0; }
 
@@ -472,27 +479,27 @@ dl dd:after {
   clear: both;
   height: 0; }
 
-.sidebar h6 {
+.sidebar h6, .mobile-sidebar h6 {
   line-height: 1em;
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: #888;
   font-weight: bold; }
 
-.sidebar {
+.sidebar, .mobile-sidebar {
   padding: 20px 20px 0 20px;
   white-space: nowrap;
   overflow-y: auto; }
-  .sidebar section {
+  .sidebar section, .sidebar .mobile-section, .mobile-sidebar section, .mobile-sidebar .mobile-section {
     padding: 10px 0; }
-  .sidebar ul {
+  .sidebar ul, .mobile-sidebar ul {
     padding: 0 0 0 10px;
     margin: 0;
     list-style: none; }
-  .sidebar h6 {
+  .sidebar h6, .mobile-sidebar h6 {
     padding: 0;
     margin: 0 0 5px 0; }
-  .sidebar a {
+  .sidebar a, .mobile-sidebar a {
     color: #777;
     text-decoration: none;
     font-size: .90em;
@@ -501,7 +508,7 @@ dl dd:after {
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 2px 0; }
-    .sidebar a.active {
+    .sidebar a.active, .mobile-sidebar a.active {
       color: #2196F3;
       text-decoration: none; }
 
@@ -727,6 +734,7 @@ header {
     width: 25px;
     height: 25px;
     margin: 0 0 0 18px;
+    background: url(../images/menu.svg) no-repeat center bottom;
     /*background-image: url({{ site.url }}+ '/images/menu.svg');*/
     background-color: transparent;
     background-repeat: no-repeat;
@@ -792,6 +800,9 @@ header {
   font-size: .6em;
   margin: 30px 0 0 0;
   display: none; }
+
+body.nav-open .mobile-sidebar, body.nav-open header > form {
+  display: block; }
 
 code .hll {
   background-color: #ffffcc; }

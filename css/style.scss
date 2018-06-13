@@ -405,6 +405,21 @@ img {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0EBDF1', endColorstr='#FF0CAAD9', GradientType=0);
 }
+
+@media (max-width: 979px){
+    #banner{
+        display:none;
+    }
+
+    .content-div {
+        margin: 20px;
+        padding-top: 30px;
+    }
+
+    .editor-link{
+        display:none;
+    }
+}
  
 @import "mixins";
 @import "main";
