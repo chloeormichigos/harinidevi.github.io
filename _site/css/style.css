@@ -2,6 +2,9 @@
   display: none;
   text-transform: capitalize; }
 
+.mobile-section {
+  text-transform: capitalize; }
+
 /*
     $base-url: );
  */
