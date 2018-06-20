@@ -14,3 +14,6 @@ content_markdown: |-
 <a class="editor-link" href="{{site.github}}chapter1.md">Edit on Github</a>
 
 Introduction chapter 1
+
+
+Sample Text
